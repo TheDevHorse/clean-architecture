@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class AthleteUseCase implements AthleteInputPort {
 
     @Override
-    public Athlete getAthlete() {
+    public Athlete getAthlete(Integer athleteId) {
         return null;
     }
 

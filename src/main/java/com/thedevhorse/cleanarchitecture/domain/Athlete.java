@@ -4,20 +4,35 @@ import java.util.Arrays;
 
 public class Athlete {
 
+    private Integer athleteId;
+
     private String name;
 
     private int age;
 
     private Category category;
 
-    private Athlete(String name, int age) {
+    private Athlete(Integer athleteId,
+                    String name,
+                    int age) {
+        this.athleteId = athleteId;
         this.name = name;
         this.age = age;
         setCategory(age);
     }
 
-    public static Athlete create(String name, int age) {
-        return new Athlete(name, age);
+    public static Athlete create(final Integer athleteId,
+                                 final String name,
+                                 final int age) {
+        return new Athlete(
+                athleteId,
+                name,
+                age
+        );
+    }
+
+    public Integer athleteId(){
+        return athleteId;
     }
 
     public String name() {
@@ -36,7 +51,6 @@ public class Athlete {
         setCategory(age);
         return this;
     }
-
 
     private void setCategory(int age) {
         this.category = Arrays.stream(Category.values())
