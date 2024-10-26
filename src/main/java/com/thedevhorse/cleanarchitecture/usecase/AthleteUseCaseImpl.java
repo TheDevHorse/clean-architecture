@@ -2,7 +2,6 @@ package com.thedevhorse.cleanarchitecture.usecase;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
 import com.thedevhorse.cleanarchitecture.usecase.in.AthleteInputPort;
-
 import com.thedevhorse.cleanarchitecture.usecase.out.AthleteRepositoryOutputPort;
 import org.springframework.stereotype.Service;
 
@@ -22,11 +21,11 @@ public class AthleteUseCaseImpl implements AthleteInputPort {
 
     @Override
     public void createAthlete(final Athlete athlete) {
-
+        athleteRepositoryOutputPort.saveAthlete(athlete);
     }
 
     @Override
     public void updateAthlete(final Athlete athlete) {
-
+        athleteRepositoryOutputPort.saveAthlete(athlete);
     }
 }
