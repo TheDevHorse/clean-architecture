@@ -2,7 +2,7 @@ package com.thedevhorse.cleanarchitecture.infra.controller;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
 import com.thedevhorse.cleanarchitecture.infra.controller.dto.AthleteResponse;
-import com.thedevhorse.cleanarchitecture.usecase.in.AthleteInputPort;
+import com.thedevhorse.cleanarchitecture.usecase.port.AthleteInputPort;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

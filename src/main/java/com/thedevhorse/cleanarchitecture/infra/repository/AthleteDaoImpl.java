@@ -1,7 +1,7 @@
 package com.thedevhorse.cleanarchitecture.infra.repository;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
-import com.thedevhorse.cleanarchitecture.usecase.out.AthleteRepositoryOutputPort;
+import com.thedevhorse.cleanarchitecture.usecase.port.AthleteRepositoryOutputPort;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;

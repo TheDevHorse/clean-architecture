@@ -1,4 +1,4 @@
-package com.thedevhorse.cleanarchitecture.usecase.in;
+package com.thedevhorse.cleanarchitecture.usecase.port;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
 

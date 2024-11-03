@@ -1,8 +1,8 @@
 package com.thedevhorse.cleanarchitecture.usecase;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
-import com.thedevhorse.cleanarchitecture.usecase.in.AthleteInputPort;
-import com.thedevhorse.cleanarchitecture.usecase.out.AthleteRepositoryOutputPort;
+import com.thedevhorse.cleanarchitecture.usecase.port.AthleteInputPort;
+import com.thedevhorse.cleanarchitecture.usecase.port.AthleteRepositoryOutputPort;
 import org.springframework.stereotype.Service;
 
 @Service
