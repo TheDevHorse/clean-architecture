@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Athlete {
 
-    private Integer athleteId;
+    private String athleteId;
 
     private String name;
 
@@ -12,7 +12,7 @@ public class Athlete {
 
     private Category category;
 
-    private Athlete(Integer athleteId,
+    private Athlete(String athleteId,
                     String name,
                     int age) {
         this.athleteId = athleteId;
@@ -21,7 +21,7 @@ public class Athlete {
         setCategory(age);
     }
 
-    public static Athlete create(final Integer athleteId,
+    public static Athlete create(final String athleteId,
                                  final String name,
                                  final int age) {
         return new Athlete(
@@ -31,7 +31,7 @@ public class Athlete {
         );
     }
 
-    public Integer athleteId(){
+    public String athleteId(){
         return athleteId;
     }
 

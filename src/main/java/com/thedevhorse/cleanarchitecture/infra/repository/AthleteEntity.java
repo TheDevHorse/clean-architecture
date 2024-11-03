@@ -12,8 +12,8 @@ public class AthleteEntity {
     private Long id;
     private String athleteId;
     private int age;
-    @Enumerated(EnumType.STRING)
-    private Category category;
+
+    private String name;
 
     public AthleteEntity() {
     }
@@ -30,8 +30,8 @@ public class AthleteEntity {
         return age;
     }
 
-    public Category getCategory() {
-        return category;
+    public String getName() {
+        return name;
     }
 
     public void setId(Long id) {
@@ -46,7 +46,7 @@ public class AthleteEntity {
         this.age = age;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
+    public void setName(String name) {
+        this.name = name;
     }
 }
