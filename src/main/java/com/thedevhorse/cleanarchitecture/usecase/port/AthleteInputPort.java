@@ -4,7 +4,7 @@ import com.thedevhorse.cleanarchitecture.domain.Athlete;
 
 public interface AthleteInputPort {
 
-    Athlete getAthlete(Integer athleteId);
+    Athlete getAthlete(String athleteId);
 
     void createAthlete(Athlete athlete);
 

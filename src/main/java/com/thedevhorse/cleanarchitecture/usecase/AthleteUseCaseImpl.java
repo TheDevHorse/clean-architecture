@@ -15,13 +15,13 @@ public class AthleteUseCaseImpl implements AthleteInputPort {
     }
 
     @Override
-    public Athlete getAthlete(Integer athleteId) {
+    public Athlete getAthlete(String athleteId) {
         return athleteRepositoryOutputPort.getAthleteById(athleteId);
     }
 
     @Override
     public void createAthlete(final Athlete athlete) {
-        athleteRepositoryOutputPort.saveAthlete(athlete);
+        athleteRepositoryOutputPort.createAthlete(athlete);
     }
 
     @Override

@@ -6,5 +6,7 @@ public interface AthleteRepositoryOutputPort {
 
    Athlete getAthleteById(String athleteId);
 
-   void saveAthlete(Athlete athlete);
+   void createAthlete(Athlete athlete);
+
+   void updateAthlete(Athlete athlete);
 }
