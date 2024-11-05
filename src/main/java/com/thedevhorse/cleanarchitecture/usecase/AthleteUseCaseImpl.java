@@ -26,6 +26,6 @@ public class AthleteUseCaseImpl implements AthleteInputPort {
 
     @Override
     public void updateAthlete(final Athlete athlete) {
-        athleteRepositoryOutputPort.saveAthlete(athlete);
+        athleteRepositoryOutputPort.updateAthlete(athlete);
     }
 }
