@@ -37,7 +37,7 @@ public class AthleteController {
     @PutMapping
     public void updateAthlete(AthleteRequest athleteRequest) {
         Athlete athlete = mapToAthlete(athleteRequest);
-        athleteInputPort.createAthlete(athlete);
+        athleteInputPort.updateAthlete(athlete);
     }
 
     private Athlete mapToAthlete(AthleteRequest athleteRequest) {

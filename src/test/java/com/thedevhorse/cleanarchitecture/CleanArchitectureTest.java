@@ -9,18 +9,16 @@ import static com.tngtech.archunit.library.Architectures.layeredArchitecture;
 
 class CleanArchitectureTest {
 
-
     @Test
-    void givenInfraClasses_thenShouldOnlyBeAccessedByUsecaseLayer() {
-        JavaClasses jc = new ClassFileImporter().importPackages("com.thedevhorse.cleanarchitecture");
+    void givenControllerClasses_thenNotBeAccessedByAnyLayer() {
+        JavaClasses importedClasses = new ClassFileImporter().importPackages("com.thedevhorse.cleanarchitecture");
 
         Architectures.LayeredArchitecture arch = layeredArchitecture()
-                // Define layers
-                .layer("Infra").definedBy("..infra..")
-                .layer("Usecase").definedBy("..usecase..")
-                // Add constraints
-                .whereLayer("Infra").mayOnlyBeAccessedByLayers("Usecase");
+                .consideringAllDependencies()
+                .layer("Controller").definedBy("..controller..")
 
-        arch.check(jc);
+                .whereLayer("Controller").mayNotBeAccessedByAnyLayer();
+
+        arch.check(importedClasses);
     }
 }
