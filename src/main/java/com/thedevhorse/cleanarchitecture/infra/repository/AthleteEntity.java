@@ -1,6 +1,5 @@
 package com.thedevhorse.cleanarchitecture.infra.repository;
 
-import com.thedevhorse.cleanarchitecture.domain.Category;
 import jakarta.persistence.*;
 
 @Entity
