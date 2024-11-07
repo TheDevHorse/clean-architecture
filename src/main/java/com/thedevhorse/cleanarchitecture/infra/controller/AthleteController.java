@@ -3,7 +3,7 @@ package com.thedevhorse.cleanarchitecture.infra.controller;
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
 import com.thedevhorse.cleanarchitecture.infra.controller.dto.AthleteRequest;
 import com.thedevhorse.cleanarchitecture.infra.controller.dto.AthleteResponse;
-import com.thedevhorse.cleanarchitecture.usecase.port.AthleteInputPort;
+import com.thedevhorse.cleanarchitecture.usecase.port.in.AthleteInputPort;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
