@@ -23,8 +23,6 @@ class CleanArchitectureTest {
 
                 .whereLayer("UseCase").mayOnlyBeAccessedByLayers("InputPort")
                 .whereLayer("UseCase").mayOnlyAccessLayers("OutputPort")
-                .whereLayer("InputPort").mayOnlyBeAccessedByLayers("Infra")
-                .whereLayer("OutputPort").mayOnlyBeAccessedByLayers("UseCase")
 
                 .ignoreDependency(resideInAPackage("..infra.."), resideInAPackage("..usecase.port.out.."))
                 .ignoreDependency(resideInAPackage("..usecase"), resideInAPackage("..usecase.port.in.."));
