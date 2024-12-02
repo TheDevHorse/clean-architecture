@@ -2,7 +2,7 @@ package com.thedevhorse.cleanarchitecture.usecase.port.out;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
 
-public interface AthleteRepositoryOutputPort {
+public interface AthleteDaoOutputPort {
 
    Athlete getAthleteById(String athleteId);
 

@@ -1,12 +1,12 @@
 package com.thedevhorse.cleanarchitecture.infra.repository;
 
 import com.thedevhorse.cleanarchitecture.domain.Athlete;
-import com.thedevhorse.cleanarchitecture.usecase.port.out.AthleteRepositoryOutputPort;
+import com.thedevhorse.cleanarchitecture.usecase.port.out.AthleteDaoOutputPort;
 import jakarta.persistence.NoResultException;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AthleteDaoImpl implements AthleteRepositoryOutputPort {
+public class AthleteDaoImpl implements AthleteDaoOutputPort {
 
     private final AthleteRepository athleteRepository;
 
