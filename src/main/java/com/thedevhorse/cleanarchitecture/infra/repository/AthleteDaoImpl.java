@@ -30,6 +30,7 @@ public class AthleteDaoImpl implements AthleteDaoOutputPort {
     public void updateAthlete(Athlete athlete) {
         AthleteEntity athleteEntity = findEntityById(athlete.athleteId());
         athleteEntity.setAge(athlete.age());
+        athleteEntity.setName(athlete.name());
 
         athleteRepository.save(athleteEntity);
     }
