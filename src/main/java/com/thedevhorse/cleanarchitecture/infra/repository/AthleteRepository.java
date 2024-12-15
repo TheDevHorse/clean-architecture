@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface AthleteRepository extends JpaRepository<AthleteEntity, Integer> {
+public interface AthleteRepository extends JpaRepository<AthleteEntity, Long> {
 
     Optional<AthleteEntity> findByAthleteId(String athleteId);
 }
