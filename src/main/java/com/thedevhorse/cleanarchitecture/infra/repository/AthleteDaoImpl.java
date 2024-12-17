@@ -16,14 +16,16 @@ public class AthleteDaoImpl implements AthleteDaoOutputPort {
 
     @Override
     public Athlete getAthleteById(final String athleteId) {
-        AthleteEntity athleteEntity = findEntityById(athleteId);
-        return mapToAthlete(athleteEntity);
+        return mapToAthlete(
+                findEntityById(athleteId)
+        );
     }
 
     @Override
     public void createAthlete(Athlete athlete) {
-        AthleteEntity athleteEntity = mapToAthleteEntity(athlete);
-        athleteRepository.save(athleteEntity);
+        athleteRepository.save(
+                mapToAthleteEntity(athlete)
+        );
     }
 
     @Override
