@@ -46,5 +46,6 @@ Your project is a well-structured application designed following the principles 
 
 ## **Architecture Diagram**
 
+![CleanArchitecture](https://github.com/user-attachments/assets/ae965004-9531-4924-9140-fcf7af73ab2c)
 
-![CleanArchitecture.jpg](..%2F..%2F..%2F..%2FOneDrive%2FAmbiente%20de%20Trabalho%2FCleanArchitecture.jpg)
+
