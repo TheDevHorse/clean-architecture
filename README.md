@@ -1,26 +1,23 @@
-
 # **Clean Architecture**
 
-## **Overview**
-
-Your project is a well-structured application designed following the principles of **Clean Architecture**, emphasizing clarity, maintainability, and scalability. The architecture organizes the application into distinct layers, each with specific responsibilities, ensuring that the core business logic remains independent of external frameworks or implementations.
+Clean Architecture is a design philosophy that emphasizes clarity, maintainability, and scalability in application development. By organizing an application into distinct layers, each with specific responsibilities, Clean Architecture ensures that core business logic remains independent of external frameworks, libraries, or implementation details. This separation promotes flexibility, testability, and long-term adaptability.
 
 ---
 
 ## **Key Components**
 
 ### **Domain Layer**
-- Represents the core of the application, containing the fundamental business logic and entities. 
+- Represents the core of the application, containing the fundamental business logic and entities.
 - This is the heart of the system, where all critical business rules reside, ensuring they are unaffected by changes in other layers.
 
 ### **Use Case Layer**
-- Implements application-specific operations by defining and orchestrating the business logic. 
+- Implements application-specific operations by defining and orchestrating the business logic.
 - This layer acts as a bridge between the domain and the external world, ensuring the integrity of processes such as creating, updating, or retrieving data.
 
 ### **Ports**
 - Defines interfaces that establish boundaries between the use case layer and external systems.
-  - **Input Ports**: Facilitate communication with the application’s core.
-  - **Output Ports**: Abstract interactions with external components such as databases or APIs, promoting flexibility and independence.
+    - **Input Ports**: Facilitate communication with the application’s core.
+    - **Output Ports**: Abstract interactions with external components such as databases or APIs, promoting flexibility and independence.
 
 ### **Infrastructure Layer**
 - Handles implementation details, including data persistence and communication with external systems.
@@ -48,4 +45,4 @@ Your project is a well-structured application designed following the principles 
 
 ![CleanArchitecture](https://github.com/user-attachments/assets/ae965004-9531-4924-9140-fcf7af73ab2c)
 
-
+---
