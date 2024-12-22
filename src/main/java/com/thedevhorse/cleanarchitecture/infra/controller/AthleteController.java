@@ -18,26 +18,32 @@ public class AthleteController {
 
     @GetMapping("/{athleteId}")
     public AthleteResponse getAthlete(@PathVariable String athleteId) {
-        Athlete athlete = athleteInputPort.getAthlete(athleteId);
+        return mapToAthleteResponse(
+                athleteInputPort.getAthlete(athleteId)
+        );
+    }
 
+    @PostMapping
+    public void createAthlete(AthleteRequest athleteRequest) {
+        athleteInputPort.createAthlete(
+                mapToAthlete(athleteRequest)
+        );
+    }
+
+    @PutMapping
+    public void updateAthlete(AthleteRequest athleteRequest) {
+        athleteInputPort.updateAthlete(
+                mapToAthlete(athleteRequest)
+        );
+    }
+
+    private AthleteResponse mapToAthleteResponse(Athlete athlete) {
         return new AthleteResponse(
                 athlete.athleteId(),
                 athlete.name(),
                 athlete.age(),
                 athlete.category()
         );
-    }
-
-    @PostMapping
-    public void createAthlete(AthleteRequest athleteRequest) {
-        Athlete athlete = mapToAthlete(athleteRequest);
-        athleteInputPort.createAthlete(athlete);
-    }
-
-    @PutMapping
-    public void updateAthlete(AthleteRequest athleteRequest) {
-        Athlete athlete = mapToAthlete(athleteRequest);
-        athleteInputPort.updateAthlete(athlete);
     }
 
     private Athlete mapToAthlete(AthleteRequest athleteRequest) {
