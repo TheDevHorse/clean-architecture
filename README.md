@@ -47,3 +47,4 @@ Your project is a well-structured application designed following the principles 
 ## **Architecture Diagram**
 
 
+![CleanArchitecture.jpg](..%2F..%2F..%2F..%2FOneDrive%2FAmbiente%20de%20Trabalho%2FCleanArchitecture.jpg)
