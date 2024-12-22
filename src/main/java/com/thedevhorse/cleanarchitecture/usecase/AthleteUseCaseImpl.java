@@ -15,7 +15,7 @@ public class AthleteUseCaseImpl implements AthleteInputPort {
     }
 
     @Override
-    public Athlete getAthlete(String athleteId) {
+    public Athlete getAthlete(final String athleteId) {
         return athleteDaoOutputPort.getAthleteById(athleteId);
     }
 
