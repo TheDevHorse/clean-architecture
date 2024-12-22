@@ -6,20 +6,20 @@ Clean Architecture is a design philosophy that emphasizes clarity, maintainabili
 
 ## **Key Components**
 
-### **Domain Layer**
+### **Domain**
 - Represents the core of the application, containing the fundamental business logic and entities.
 - This is the heart of the system, where all critical business rules reside, ensuring they are unaffected by changes in other layers.
 
-### **Use Case Layer**
+### **Use Case**
 - Implements application-specific operations by defining and orchestrating the business logic.
 - This layer acts as a bridge between the domain and the external world, ensuring the integrity of processes such as creating, updating, or retrieving data.
 
 ### **Ports**
-- Defines interfaces that establish boundaries between the use case layer and external systems.
+- Defines interfaces that establish boundaries between the use case and external systems.
     - **Input Ports**: Facilitate communication with the application’s core.
     - **Output Ports**: Abstract interactions with external components such as databases or APIs, promoting flexibility and independence.
 
-### **Infrastructure Layer**
+### **Infrastructure**
 - Handles implementation details, including data persistence and communication with external systems.
 - Ensures that the rest of the application remains decoupled from the technical details of external resources.
 
