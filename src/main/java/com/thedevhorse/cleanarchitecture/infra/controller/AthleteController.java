@@ -7,7 +7,7 @@ import com.thedevhorse.cleanarchitecture.usecase.port.in.AthleteInputPort;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/athlete")
+@RequestMapping("/api/athletes")
 public class AthleteController {
 
     private final AthleteInputPort athleteInputPort;
