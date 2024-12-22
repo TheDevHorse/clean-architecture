@@ -24,14 +24,14 @@ public class AthleteController {
     }
 
     @PostMapping
-    public void createAthlete(AthleteRequest athleteRequest) {
+    public void createAthlete(@RequestBody AthleteRequest athleteRequest) {
         athleteInputPort.createAthlete(
                 mapToAthlete(athleteRequest)
         );
     }
 
     @PutMapping
-    public void updateAthlete(AthleteRequest athleteRequest) {
+    public void updateAthlete(@RequestBody  AthleteRequest athleteRequest) {
         athleteInputPort.updateAthlete(
                 mapToAthlete(athleteRequest)
         );
