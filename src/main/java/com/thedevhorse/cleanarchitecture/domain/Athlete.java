@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Athlete {
 
-    private String athleteId;
+    private final String athleteId;
 
-    private String name;
+    private final String name;
 
-    private int age;
+    private final int age;
 
     private Category category;
 
